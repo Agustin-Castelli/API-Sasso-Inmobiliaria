@@ -1,6 +1,9 @@
-﻿namespace SassoInmobiliariaAPI.Data.Interfaces
+﻿using SassoInmobiliariaAPI.Models.Entities;
+
+namespace SassoInmobiliariaAPI.Data.Interfaces
 {
-    public interface IPropertyRepository
+    public interface IPropertyRepository : IBaseRepository<Property>
     {
+
     }
 }

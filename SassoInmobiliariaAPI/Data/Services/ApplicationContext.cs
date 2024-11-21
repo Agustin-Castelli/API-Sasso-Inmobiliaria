@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SassoInmobiliariaAPI.Models.Entities;
 
-namespace SassoInmobiliariaAPI.Data.Repositories
+namespace SassoInmobiliariaAPI.Data.Services
 {
     public class ApplicationContext : DbContext
     {
