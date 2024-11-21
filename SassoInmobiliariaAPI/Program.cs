@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SassoInmobiliariaAPI.Data.Repositories;
+using SassoInmobiliariaAPI.Data.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
