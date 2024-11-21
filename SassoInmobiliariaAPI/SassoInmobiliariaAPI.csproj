@@ -11,7 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Folder Include="Data\Interfaces\" />
+    <Folder Include="Data\Services\" />
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="Models\Enums\" />
+    <Folder Include="Models\Exceptions\" />
+    <Folder Include="Services\DTOs\" />
+    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
 </Project>
