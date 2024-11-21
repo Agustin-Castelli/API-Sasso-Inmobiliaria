@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|c:\\users\\agustin\\source\\repos\\sassoinmobiliariaapi\\sassoinmobiliariaapi\\models\\entities\\developmentprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|solutionrelative:sassoinmobiliariaapi\\models\\entities\\developmentprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|c:\\users\\agustin\\source\\repos\\sassoinmobiliariaapi\\sassoinmobiliariaapi\\models\\entities\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|solutionrelative:sassoinmobiliariaapi\\models\\entities\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|c:\\users\\agustin\\source\\repos\\sassoinmobiliariaapi\\sassoinmobiliariaapi\\models\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|solutionrelative:sassoinmobiliariaapi\\models\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|c:\\users\\agustin\\source\\repos\\sassoinmobiliariaapi\\sassoinmobiliariaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E4B9CC-AFFC-451B-8117-D88F46CBAEDA}|SassoInmobiliariaAPI\\SassoInmobiliariaAPI.csproj|solutionrelative:sassoinmobiliariaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DevelopmentProp.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Models\\Entities\\DevelopmentProp.cs",
+              "RelativeDocumentMoniker": "SassoInmobiliariaAPI\\Models\\Entities\\DevelopmentProp.cs",
+              "ToolTip": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Models\\Entities\\DevelopmentProp.cs",
+              "RelativeToolTip": "SassoInmobiliariaAPI\\Models\\Entities\\DevelopmentProp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T00:08:14.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Property.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Models\\Entities\\Property.cs",
+              "RelativeDocumentMoniker": "SassoInmobiliariaAPI\\Models\\Entities\\Property.cs",
+              "ToolTip": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Models\\Entities\\Property.cs",
+              "RelativeToolTip": "SassoInmobiliariaAPI\\Models\\Entities\\Property.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T00:04:13.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Models\\Entities\\Admin.cs",
+              "RelativeDocumentMoniker": "SassoInmobiliariaAPI\\Models\\Entities\\Admin.cs",
+              "ToolTip": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Models\\Entities\\Admin.cs",
+              "RelativeToolTip": "SassoInmobiliariaAPI\\Models\\Entities\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T00:03:46.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SassoInmobiliariaAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Agustin\\source\\repos\\SassoInmobiliariaAPI\\SassoInmobiliariaAPI\\Program.cs",
+              "RelativeToolTip": "SassoInmobiliariaAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T00:02:47.655Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
