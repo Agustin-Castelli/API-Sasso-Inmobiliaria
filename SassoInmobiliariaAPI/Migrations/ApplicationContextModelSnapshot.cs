@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SassoInmobiliariaAPI.Data.Repositories;
+using SassoInmobiliariaAPI.Data.Services;
 
 #nullable disable
 
