@@ -1,4 +1,6 @@
-﻿namespace SassoInmobiliariaAPI.Models.Entities
+﻿using SassoInmobiliariaAPI.Models.Enums;
+
+namespace SassoInmobiliariaAPI.Models.Entities
 {
     public class Property
     {
@@ -16,7 +18,7 @@
         public bool IsActive { get; set; }
         public bool IsDistingued { get; set; }
         public bool IsUpToCredit { get; set; }
-        public Enum? TypeOfPropEnum { get; set; }
-        public Enum? TypeOfOfferEnum { get; set; }
+        public TypeOfPropEnum? TypeOfProp { get; set; }
+        public TypeOfOfferEnum? TypeOfOffer { get; set; }
     }
 }
