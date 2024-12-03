@@ -25,11 +25,14 @@ namespace SassoInmobiliariaAPI.Data.Repositories
             _context.SaveChanges();
             return entity;
         }
-        public void Delete(T entity)
-        {
-            _context.Set<T>().Remove(entity);
-            _context.SaveChanges();
-        }
+
+        // -------------->  por ahora no vamos a eliminar registros de forma física
+
+        //public void Delete(T entity)
+        //{
+        //    _context.Set<T>().Remove(entity);
+        //    _context.SaveChanges();
+        //}
 
         public void Update(T entity)
         {

@@ -10,5 +10,11 @@ namespace SassoInmobiliariaAPI.Data.Repositories
         {
 
         }
+
+        public void Delete(Admin admin)
+        {
+            _context.Set<Admin>().Remove(admin);
+            _context.SaveChanges();
+        }
     }
 }

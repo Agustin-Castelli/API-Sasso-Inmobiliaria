@@ -1,9 +1,14 @@
-﻿namespace SassoInmobiliariaAPI.Models.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace SassoInmobiliariaAPI.Models.Entities
 {
     public class DevelopmentProp
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string? DelevopName { get; set; }
+        public string? DevelopName { get; set; }
         public string? DevelopDescription { get; set; }
         public string? DevelopAdress { get; set; }
         public string? DevelopImage { get; set; }
