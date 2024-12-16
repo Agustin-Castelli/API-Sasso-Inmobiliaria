@@ -28,7 +28,8 @@ builder.Services.AddScoped<IDevelopPropService, DevelopPropService>();
 
 #region Database  
 builder.Services.AddDbContext<ApplicationContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    new MySqlServerVersion(new Version(8, 0, 2))));
 #endregion
 
 var app = builder.Build();
