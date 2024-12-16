@@ -10,5 +10,10 @@ namespace SassoInmobiliariaAPI.Data.Repositories
         {
 
         }
+
+        public void AddPropToDevelopment(int id, Property prop)
+        {
+            var devProp = 
+        }
     }
 }

@@ -48,6 +48,34 @@ namespace SassoInmobiliariaAPI.Controllers
             }
         }
 
+        [HttpPatch("[action]/{id}")]
+        public IActionResult DeleteProp([FromRoute] int id)
+        {
+            try
+            {
+                _propertyService.DeleteProp(id);
+                return NoContent();
+            }
+            catch(NotFoundException ex) 
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpPatch("[action]/{id}")]
+        public IActionResult RecoverProp([FromRoute] int id)
+        {
+            try
+            {
+                _propertyService.RecoverProp(id);
+                return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
         [HttpGet("[action]/{id}")]
         public ActionResult<Property> GetById([FromRoute] int id)
         {
@@ -59,6 +87,12 @@ namespace SassoInmobiliariaAPI.Controllers
             {
                 return NotFound(ex.Message);
             }
+        }
+
+        [HttpGet("[action]")]
+        public ActionResult<List<Property>> GetActiveProperties()
+        {
+            return _propertyService.GetActiveProperties();
         }
 
         [HttpGet("[action]")]

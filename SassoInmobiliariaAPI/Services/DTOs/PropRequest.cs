@@ -14,7 +14,6 @@ namespace SassoInmobiliariaAPI.Services.DTOs
         public int Bedrooms { get; set; }
         public float Latitude { get; set; }
         public float Longitude { get; set; }
-        public bool IsActive { get; set; }
         public bool IsDistingued { get; set; }
         public bool IsUpToCredit { get; set; }
         public TypeOfPropEnum? TypeOfProp { get; set; }

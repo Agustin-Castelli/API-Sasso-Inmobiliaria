@@ -30,7 +30,7 @@ namespace SassoInmobiliariaAPI.Services
             newObj.Bedrooms = request.Bedrooms;
             newObj.Latitude = request.Latitude;
             newObj.Longitude = request.Longitude;
-            newObj.IsActive = request.IsActive;
+            newObj.IsActive = true;
             newObj.IsDistingued = request.IsDistingued;
             newObj.IsUpToCredit = request.IsUpToCredit;
             newObj.TypeOfOffer = request.TypeOfOffer;
@@ -59,7 +59,7 @@ namespace SassoInmobiliariaAPI.Services
                 if (request.Bedrooms > 0) prop.Bedrooms = request.Bedrooms;
                 if (request.Latitude != 0) prop.Latitude = request.Latitude;
                 if (request.Longitude != 0) prop.Longitude = request.Longitude;
-                prop.IsActive = request.IsActive;
+                prop.IsActive = true;
                 prop.IsDistingued = request.IsDistingued;
                 prop.IsUpToCredit = request.IsUpToCredit;
                 prop.TypeOfOffer = request.TypeOfOffer;
@@ -81,6 +81,43 @@ namespace SassoInmobiliariaAPI.Services
             {
                 return obj;
             }
+        }
+
+        public void DeleteProp(int id)
+        {
+            var obj = _propertyRepository.GetById(id);
+
+            if (obj == null)
+            {
+                throw new NotFoundException(nameof(obj), id);
+            }
+            else
+            {
+                obj.IsActive = false;
+                _propertyRepository.Update(obj);
+            }
+        }
+
+        public void RecoverProp(int id)
+        {
+            var obj = _propertyRepository.GetById(id);
+
+            if (obj == null)
+            {
+                throw new NotFoundException(nameof(obj), id);
+            }
+            else
+            {
+                obj.IsActive = true;
+                _propertyRepository.Update(obj);
+            }
+        }
+
+        public List<Property> GetActiveProperties()
+        {
+            var propertiesFiltered = _propertyRepository.GetAll().Where(p => p.IsActive).ToList();
+
+            return propertiesFiltered;
         }
 
         public List<Property> GetAll()
