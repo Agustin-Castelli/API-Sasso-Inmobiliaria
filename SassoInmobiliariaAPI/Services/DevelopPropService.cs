@@ -29,7 +29,7 @@ namespace SassoInmobiliariaAPI.Services
             newObj.DevelopAdress = request.DevelopAdress;
             newObj.DevelopImage = request.DevelopImage;
             newObj.IsActive = true;
-            newObj.Properties = request.Properties;
+            //newObj.Properties = request.Properties;
 
             return _developmentPropRepository.Create(newObj);
         }
@@ -50,7 +50,7 @@ namespace SassoInmobiliariaAPI.Services
                 obj.DevelopAdress = request.DevelopAdress;
                 obj.DevelopImage = request.DevelopImage;
                 obj.IsActive = true;
-                obj.Properties = request.Properties;
+                //obj.Properties = request.Properties;
 
                 _developmentPropRepository.Update(obj);
             }
