@@ -16,5 +16,10 @@ namespace SassoInmobiliariaAPI.Data.Repositories
             _context.Set<Admin>().Remove(admin);
             _context.SaveChanges();
         }
+
+        public Admin? CheckUsername(string userName)
+        {
+            return _context.Set<Admin>().FirstOrDefault(u => u.Username == userName);
+        }
     }
 }
