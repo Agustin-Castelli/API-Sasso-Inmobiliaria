@@ -1,4 +1,5 @@
 ﻿using SassoInmobiliariaAPI.Models.Entities;
+using SassoInmobiliariaAPI.Models.Enums;
 
 namespace SassoInmobiliariaAPI.Services.DTOs
 {
@@ -9,5 +10,6 @@ namespace SassoInmobiliariaAPI.Services.DTOs
         public string? DevelopAdress { get; set; }
         public string? DevelopImage { get; set; }
         public List<Property>? Properties { get; set; }
+        public StateOfDevelopEnum? StateOfDevelop { get; set; }
     }
 }
