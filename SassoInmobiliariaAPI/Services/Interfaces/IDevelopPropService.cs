@@ -14,8 +14,8 @@ namespace SassoInmobiliariaAPI.Services.Interfaces
         public List<DevelopmentProp> GetAll();
 
 
-        public void AddPropToDevelopment(int id, Property prop);
-        public void RemovePropFromDevelopment(int id, Property prop);
+        public void AddPropToDevelopment(int devId, int propId);
+        public void RemovePropFromDevelopment(int devId, int propId);
 
     }
 }

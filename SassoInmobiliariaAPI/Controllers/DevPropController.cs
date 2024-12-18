@@ -18,6 +18,8 @@ namespace SassoInmobiliariaAPI.Controllers
             _developPropService = developPropService;
         }
 
+        //  <-------------------------->  CONTROLADORES RELACIONADOS AL CRUD  <-------------------------->
+
         [HttpPost("[action]")]
         public IActionResult Create([FromBody] DevPropRequest request)
         {
@@ -101,5 +103,35 @@ namespace SassoInmobiliariaAPI.Controllers
         }
 
 
+        //  <-------------------------->  CONTROLADORES ESPECÍFICOS DE LA ENTIDAD <-------------------------->
+
+
+        [HttpPatch("[action]/{devId}/{propId}")]
+        public IActionResult AddPropToDevelopment([FromRoute] int devId, [FromRoute] int propId)
+        {
+            try
+            {
+                _developPropService.AddPropToDevelopment(devId, propId);
+                return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpPatch("[action]/{devId}/{propId}")]
+        public IActionResult RemovePropFromDevelopment([FromRoute] int devId, [FromRoute] int propId)
+        {
+            try
+            {
+                _developPropService.RemovePropFromDevelopment(devId, propId);
+                return NoContent();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
     }
 }

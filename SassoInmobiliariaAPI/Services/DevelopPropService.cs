@@ -10,10 +10,12 @@ namespace SassoInmobiliariaAPI.Services
     public class DevelopPropService : IDevelopPropService
     {
         private readonly IDevelopmentPropRepository _developmentPropRepository;
+        private readonly IPropertyRepository _propertyRepository;
 
-        public DevelopPropService(IDevelopmentPropRepository developmentPropRepository)
+        public DevelopPropService(IDevelopmentPropRepository developmentPropRepository, IPropertyRepository propertyRepository)
         {
             _developmentPropRepository = developmentPropRepository;
+            _propertyRepository = propertyRepository;
         }
 
         //  <-------------------------->  METODOS RELACIONADOS AL CRUD  <-------------------------->
@@ -101,48 +103,57 @@ namespace SassoInmobiliariaAPI.Services
         //  <-------------------------->  OTROS MÉTODOS  <-------------------------->
 
 
-        public void AddPropToDevelopment(int id, Property prop)
+        public void AddPropToDevelopment(int devId, int propId)
         {
-            var devProp = _developmentPropRepository.GetById(id);
+            var devProp = _developmentPropRepository.GetById(devId);
+            var prop = _propertyRepository.GetById(propId);
 
-            if (devProp != null)
+            if (devProp == null)
             {
-                if (!devProp.Properties.Any(p => p.Id == prop.Id))
-                {
-                    devProp.Properties?.Add(prop);
-                    _developmentPropRepository.Update(devProp);
-                }
-                else
-                {
-                    throw new ArgumentException($"La propiedad con Id {prop.Id} ya está asociada con el desarrollo con Id {id}.");
-                }
+                throw new NotFoundException(nameof(devProp), devId);
+            }
+
+            if (prop == null)
+            {
+                throw new NotFoundException(nameof(prop), propId);
+            }
+
+            if (!devProp.Properties.Any(p => p.Id == prop.Id))
+            {
+                devProp.Properties?.Add(prop);
+                _developmentPropRepository.Update(devProp);
             }
             else
             {
-                throw new NotFoundException(nameof(devProp), id);
+                throw new ArgumentException($"La propiedad {prop.Name} ya está asociada con el desarrollo {devProp.DevelopName}.");
             }
         }
 
-        public void RemovePropFromDevelopment(int id, Property prop)
+        public void RemovePropFromDevelopment(int devId, int propId)
         {
-            var devProp = _developmentPropRepository.GetById(id);
+            var devProp = _developmentPropRepository.GetById(devId);
+            var prop = _propertyRepository.GetById(propId);
 
-            if (devProp != null)
+            if (devProp == null)
             {
-                if (devProp.Properties?.Contains(prop) == true)
-                {
-                    devProp.Properties.Remove(prop);
-                    _developmentPropRepository.Update(devProp);
-                }
-                else
-                {
-                    throw new NotFoundException(nameof(prop), id);
-                }
+                throw new NotFoundException(nameof(devProp), devId);
+            }
+
+            if (prop == null)
+            {
+                throw new NotFoundException(nameof(prop), propId);
+            }
+
+            if (devProp.Properties?.Contains(prop) == true)
+            {
+                devProp.Properties.Remove(prop);
+                _developmentPropRepository.Update(devProp);
             }
             else
             {
-                throw new NotFoundException(nameof(devProp), id);
+                throw new NotFoundException(nameof(prop), propId);
             }
+
         }
     }
 }
