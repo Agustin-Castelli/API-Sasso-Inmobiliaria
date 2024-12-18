@@ -24,5 +24,6 @@ namespace SassoInmobiliariaAPI.Models.Entities
         public bool IsUpToCredit { get; set; }
         public TypeOfPropEnum? TypeOfProp { get; set; }
         public TypeOfOfferEnum? TypeOfOffer { get; set; }
-    }
+        public StateOfDevelopEnum? StateOfDevelop { get; set; }
 }
+    }
