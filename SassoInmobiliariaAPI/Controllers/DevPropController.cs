@@ -133,5 +133,11 @@ namespace SassoInmobiliariaAPI.Controllers
                 return NotFound(ex.Message);
             }
         }
+
+        [HttpGet("[action]")]
+        public List<DevelopmentProp> GetAllDevProps()
+        {
+            return _developPropService.GetAllDevProps();
+        }
     }
 }

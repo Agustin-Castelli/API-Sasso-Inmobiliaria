@@ -153,7 +153,11 @@ namespace SassoInmobiliariaAPI.Services
             {
                 throw new NotFoundException(nameof(prop), propId);
             }
+        }
 
+        public List<DevelopmentProp> GetAllDevProps()
+        {
+            return _developmentPropRepository.GetAllDevProps();
         }
     }
 }
